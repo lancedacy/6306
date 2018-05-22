@@ -1,0 +1,24 @@
+#Modified for Exponential of 10
+n <- 10
+nsim <- 1000
+lotsa.medians <- numeric(nsim)
+for (i in 1:nsim) {
+	x <- rnorm(n)
+	lotsa.medians[i] <- median(x)
+	}
+
+#Create the Histogram	
+hist(lotsa.medians)
+
+
+#Modified for Exponential of 50
+n <- 50
+nsim <- 1000
+lotsa.medians <- numeric(nsim)
+for (i in 1:nsim) {
+	x <- rnorm(n)
+	lotsa.medians[i] <- median(x)
+	}
+
+#Create the Histogram
+hist(lotsa.medians)

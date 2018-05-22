@@ -1,0 +1,34 @@
+---
+title: "StackLoss Assignment"
+author: "Lance Dacy"
+date: "May 17, 2018"
+output: 
+  html_document:
+    keep_md: true
+---
+
+#Introduction
+This R Markdown Document provides the ScatterPlot graphic of the relationship between the Air Flow and Stack Loss weather patterns from the data set stackloss (already provided and loaded in R).
+
+#Specifications
+Given that the dataset stackloss is already available in R, we will simply use this data set to understand the summary of the data, the layout of the data, as well as the Scatter Plot graphical to dispaly the data.
+
+```{r}
+#Retrieve the summary of the stackloss dataset
+summary(stackloss)
+
+#Retrieve the structure of the stackloss dataset
+str(stackloss)
+
+
+#Assign the data from stackloss to the scatter plot data and verify the data
+input <- stackloss[,c("Air.Flow","stack.loss")]
+print(head(input))
+
+# Plot the chart using the 2 variables Air Flow and Stack Loss
+plot(x = input$"Air.Flow",y = input$"stack.loss",
+     xlab = "Air Flow",
+     ylab = "Stack Loss",
+     main = "Air Flow vs Stack Loss"
+)
+```
