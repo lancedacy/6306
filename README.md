@@ -1,7 +1,7 @@
 # MSDS6306
 This repository will be used to contain all course work required for the MSDS 6306-Doing Data Science course.
 
-##File Structure
+## File Structure
 The file structure will ensure consistent patterns and principles for naming conventions.
 
 * Admin (Course syllabus and pointers to materials required for the course)
