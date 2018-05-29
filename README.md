@@ -8,3 +8,5 @@ The file structure will ensure consistent patterns and principles for naming con
 * Examples (Example projects referenced and used to help in new projets)
 * Swirl (Folder that contains all Swirl output)
 * Units (Assignments from each of the Units in the coursework which contains lecture assignments and course material assignments)
+
+Test
