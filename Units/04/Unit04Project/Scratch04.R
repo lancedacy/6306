@@ -9,5 +9,26 @@ dim(df)
 
 
 #Question 2
-count(colnames(df)
-      )
+ncol(df)
+unique(df$COMBINED)
+
+head(df)
+
+
+#Building the table
+unique(df$COMBINED)
+
+aggregate(data.frame(count = major_count), list(value = v), length)
+
+#if you have multiple factors try this
+
+library("dplyr")
+dfSong_table <- df %>% group_by(df$COMBINED) %>% summarize(major_count=n())
+dfCallSign_table <- df %>% group_by(df$CALLSIGN) %>% summarize(major_count=n())
+dfYear_table <- df %>% group_by(as.POSIXlt(as.numeric(df$TIME),origin="1970-01-01",tz="GMT"))) %>% summarize(major_count=n())
+head(as.POSIXlt(as.numeric(df$TIME),origin="1970-01-01",tz="GMT"))
+head(as.Date(as.POSIXct(df$TIME, origin="1970-01-01")))
+
+
+#write to CSV file with no row names
+write.csv(df, file = "df.csv", row.names=FALSE)
