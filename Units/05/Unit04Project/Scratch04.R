@@ -44,15 +44,11 @@ dfSong_table <- df %>% group_by(df$COMBINED) %>% summarize(major_count=n())
 
 # Fitting Labels 
 par(las=2) # make label text perpendicular to axis
-par(mar=c(5,8,4,2)) # increase y-axis margin.
 
 major_counts <- table(dfSong_table$major_count)
-#barplot(major_counts, main="Song Distribution", horiz=TRUE, names.arg=c(dfSong_table$`df$COMBINED`), cex.names=0.8)
-barplot(major_counts, main="Song Distribution", horiz=TRUE, names.arg=c(dfSong_table$`df$COMBINED`), cex.names=0.8)
-
-counts <- table(dfSong_table$major_count)
-barplot(counts, main="Car Distribution", horiz=TRUE,
-        names.arg=c(dfSong_table$`df$COMBINED`))
+barplot(major_counts, main="Song Distribution", 
+        xlab = "Unique Plays", ylab = "Song", 
+        horiz=TRUE, col = "blue")
 
 # 2d. Write the fivethirtyeight data to a csv file. Make sure that it does not have row labels.
 write.csv(df, file = "df.csv", row.names=FALSE)
