@@ -1,0 +1,10 @@
+fileURL <- "https://www.sajari.com/free-data/Information_gain_job_advertisements.csv"
+temp <- tempfile()
+download.file(fileURL, temp)
+JobsData <- read.csv(temp)
+names(JobsData)
+unlink(temp)
+dim(JobsData)
+head(JobsData)
+class(JobsData)
+str(JobsData)
