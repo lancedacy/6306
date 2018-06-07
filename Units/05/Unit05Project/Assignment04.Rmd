@@ -83,6 +83,8 @@ d. Write the fivethirtyeight data to a csv file. Make sure that it does not have
 ```{r}
 write.csv(df, file = "df.csv", row.names=FALSE)
 list.files()
+dfcsv <- read.csv("df.csv", header=TRUE)
+str(dfcsv)
 ```
 
 ###Question4: Codebook (30 points)
@@ -92,12 +94,19 @@ a. Start a new repository on GitHub for your SMU MSDS homework. On your local de
 
 * GitHub Respository: https://github.com/lancedacy/6306
 
-b. Create a README.md file which explains the purpose of the repository, the topics included, the sources for the material you post, and contact information in case of questions. Remember, the one in the root directory should be general. You are welcome to make short READMEs for each assignment individually in other folders.
+b. Create a README.md file which explains the purpose of the repository, the topics included, the sources for the material you post, and contact information in case of questions. Remember, the one in the root directory should be general.
 
+* GitHub Respository: https://github.com/lancedacy/6306
 
-c. In one (or more) of the nested directories, post your RMarkdown script, HTML file, and data from ‘fivethirtyeight.’ Make sure that in your README or elsewhere that you credit fivethirtyeight in some way.
+c. In one (or more) of the nested directories, post your RMarkdown script, HTML file, and data from ‘fivethirtyeight.’
 
+* GitHub Respository: https://github.com/lancedacy/6306/tree/master/Units/05/Unit05Project
 
 d. In your RMarkdown script, please provide the link to this GitHub so the grader can see it.
 
+* GitHub Respository: https://github.com/lancedacy/6306
 
+###Question5: Swirl (10 points)
+Complete Module 15 in the R Programming course of Swirl
+
+* GitHub Link: https://github.com/lancedacy/6306/blob/master/Units/05/Swirl15Output.txt
