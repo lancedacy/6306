@@ -31,6 +31,8 @@ library(dplyr)
 major_count <- data.frame(df %>% group_by(df$Major_category) %>% tally())
 major_count
 
+major_count <- as.data.frame(table(df$major_category))
+major_count
 # 2c. To make things easier to read, enter par(las=2) before your plot to make the text 
 # perpendicular to the axis. Make a barplot of major_count. Make sure to label the title with 
 # something informative (check the vignette if you need), label the x and y axis, and make it 
