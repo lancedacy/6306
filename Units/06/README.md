@@ -9,17 +9,17 @@ Our client is expecting a baby soon. However, he is not sure what to name the ch
 ### Files
 There are 2 files provided in raw format that we will use, various objects in R that we will use to transmute the data and finally write the results to a simply CSV file.
 
-* Raw Data Files
+* **Raw Data Files**
 	* yob2015.txt: Popular names of children in 2015
 		* Fields: Name, Gender, Count
 	* yob2016.txt: Popular names of children in 2015
 		* Fields: Name, Gender, Count
 
-* Final Output Files
+* **Final Output Files**
 	* Top10FemaleNames.csv: Top 10 female names from 2015 and 2016 combined
 		* Fields: Name, Total 
 
-* Scripts
+* **Scripts**
 	* 05AssignmentScratch.R: scratch pad to test and verify manipulations
 	* 06.RProj: R Project file that contains all history of data manipulations
 	* Assignment05_Dacy.html: Final output of the reproducible activities 
