@@ -26,7 +26,7 @@ str(y2015)
 View(y2015)
 
 #Last 10 rows of 2015
-tail(y2015, 200)
+tail(y2015, 10)
 
 #Observations about this: All counts are 5
 
@@ -34,13 +34,16 @@ tail(y2015, 200)
 # The client only cares about names that have data for both 2016 and 
 # 2015; there should be no NA values in either of your amount of 
 # children rows after merging.
-final = merge(y2016, y2015, by.x=c("Name", "Gender"), by.y=c("Name", "Gender"))
-
+final = merge(y2016, y2015, by.x=c("Name", "Gender"), 
+              by.y=c("Name", "Gender"), na.rm=TRUE)
+summary(final)
 # Create a new column called “Total” in final that adds the amount of 
 # children in 2015 and 2016 together.  In those two years combined, 
 # how many people were given popular names?
 
 final$Total <- final$Count.x + final$Count.y
+sum(final$Total)
+View(final)
 
 # Sort the data by Total.  What are the top 10 most popular names?
 top10Results <- head(final[order(-final$Total),], 10)
