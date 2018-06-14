@@ -31,11 +31,11 @@ There are 2 files provided in raw format that we will use, various objects in R 
 ### Objects Used in Data Manipulation
 Throughout the data manipulation exercises, we create data objects in memory that will be described here (as well as commented in-line in the scripts)
 
-* _df_: initial data frame to import the raw data file 2016
-* _y2015_: initial data frame to import the raw data file 2015 
-* _final_: a merged and cleaned dataset for 2015 and 2016
-* _top10Results_: a data frame to hold the top 10 names from the combined data fame called **final**
-* _top10Female_: a data set to hold the top 10 female names from the **final** dataset
+* __df__: initial data frame to import the raw data file 2016
+* __y2015__: initial data frame to import the raw data file 2015 
+* __final__: a merged and cleaned dataset for 2015 and 2016
+* __top10Results__: a data frame to hold the top 10 names from the combined data fame called **final**
+* __top10Female__: a data set to hold the top 10 female names from the **final** dataset
 
 ### Contact
 If you have any questions related to the structure or content of this repository, you may [email me](mailto:ldacy@smu.edu)
