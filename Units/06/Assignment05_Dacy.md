@@ -251,8 +251,9 @@ list.files()
 ##  [1] "~$signment05.docx"      "05AssignmentScratch.R" 
 ##  [3] "06.Rproj"               "Assignment05_Dacy.html"
 ##  [5] "Assignment05_Dacy.md"   "Assignment05_Dacy.Rmd" 
-##  [7] "Assignment05.docx"      "Top10FemaleNames.csv"  
-##  [9] "yob2015.txt"            "yob2016.txt"
+##  [7] "Assignment05.docx"      "README.md"             
+##  [9] "Top10FemaleNames.csv"   "yob2015.txt"           
+## [11] "yob2016.txt"
 ```
 
 ### Upload to GitHub
