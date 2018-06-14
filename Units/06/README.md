@@ -29,8 +29,13 @@ There are 2 files provided in raw format that we will use, various objects in R 
 	* README.md: The CodeBook MarkDown for GitHub
 
 ### Objects Used in Data Manipulation
-Throughout 
+Throughout the data manipulation exercises, we create data objects in memory that will be described here (as well as commented in-line in the scripts)
 
+* df: initial data frame to import the raw data file 2016
+* y2015: initial data frame to import the raw data file 2015 
+* final: a merged and cleaned dataset for 2015 and 2016
+* top10Results: a data frame to hold the top 10 names from the combined data fame called **final**
+* top10Female: a data set to hold the top 10 female names from the **final** dataset
 
 ### Contact
 If you have any questions related to the structure or content of this repository, you may [email me](mailto:ldacy@smu.edu)
